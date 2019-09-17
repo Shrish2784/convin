@@ -1,0 +1,23 @@
+@import "../../style";
+
+#domainForm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  text-align: center;
+  animation: slideInDown 1s ease-out;
+
+
+  #domainName {
+    border: none;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    color: #000;
+    margin: 15px auto;
+    border-bottom: 2px solid rgb(45, 145, 145);
+    outline: none;
+  }
+}

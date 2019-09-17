@@ -1,0 +1,14 @@
+@import "../../style";
+
+#errors {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  padding: 20px;
+  font-size: 20px;
+  transform: translate(-50%);
+  background-color: rgba(20, 150, 200, 0.8);
+  color: white;
+  z-index: 1000;
+  display: none;
+}
