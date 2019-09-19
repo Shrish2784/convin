@@ -2,13 +2,14 @@ import React from "react";
 
 import "./DomainForm.scss";
 import HttpService from "../../services/HttpService";
+import {redirectToDomain} from "../../Helpers/Helper";
 
 class DomainForm extends React.Component {
 
     continueDomain = (e) => {
         e.preventDefault();
         let domainName = e.target.form.domainName.value;
-        this.props.redirect(domainName);
+        redirectToDomain(domainName);
     };
 
     createDomain = (e) => {
@@ -30,7 +31,7 @@ class DomainForm extends React.Component {
         return (
             <div id="domainForm">
                 <form>
-                    <input placeholder="Name" name="domainName" type="text" autoFocus={true} id="domainName"/>
+                    <input placeholder="Name" name="domainName" type="text" autoFocus={true} id="domainName" required/>
                     <button onClick={this.continueDomain} className="button successButton" type="submit">Continue
                     </button>
                     <button onClick={this.createDomain} className="button altButton" type="submit">Create</button>
