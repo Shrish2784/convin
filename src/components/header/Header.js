@@ -16,10 +16,10 @@ class Header extends React.Component {
                     <div className="col-6 text-left p-4 pl-5"><span className="h2">Convin</span></div>
                     <div className="col-6 text-right p-4 pr-5">
                         {localStorage.key('token') && (
-                            <button onClick={this.props.signOut} className="btn btn-danger m-2">SignOut</button>
+                            <button onClick={this.props.signOut} className="btn btn-danger mx-2">SignOut</button>
                         )}
                         {this.props.domain != null && (
-                            <button onClick={this.redirectToHome} className="btn btn-dark m-2">Home</button>
+                            <button onClick={this.redirectToHome} className="btn btn-dark mx-2">Home</button>
                         )}
                     </div>
 
