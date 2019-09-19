@@ -7,16 +7,17 @@ import DomainForm from "../DomainForm/DomainForm";
 import "./Home.scss";
 
 class Home extends React.Component {
-    constructor(props) {
-        super(props);
-        console.log(window.location);
-    }
+    redirect = (domainName) => {
+        let hostname = window.location.hostname;
+        window.location.hostname = domainName + "." + hostname;
+    };
+
     render() {
         return (
             <>
                 <Errors/>
                 <Header/>
-                <DomainForm/>
+                <DomainForm redirect={this.redirect}/>
             </>
         );
     }
