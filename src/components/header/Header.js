@@ -22,7 +22,6 @@ class Header extends React.Component {
                             <button onClick={this.redirectToHome} className="btn btn-dark mx-2">Home</button>
                         )}
                     </div>
-
                 </div>
             </div>
         );
